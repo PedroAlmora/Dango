@@ -1,0 +1,129 @@
+.nav-item {
+  color: #7aa65a;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid #7aa65a;
+}
+
+.nav-item:hover {
+  color: #7aa65a;
+}
+
+.section-bg {
+  position: relative;
+  background-image: url("../images/section_1.png");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section-content {
+  width: 50%;
+  position: relative;
+}
+
+#prevSlide:hover,
+#nextSlide:hover {
+  background-color: #7aa65a;
+  color: #ffffff;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.card img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.card .flex {
+  margin-top: 1.5rem;
+}
+
+.card .text-gray-800 {
+  color: #4a4a4a;
+}
+
+.card button {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    padding: 0.5rem;
+  }
+
+  .card img {
+    width: 70%;
+  }
+
+  .card button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .card .price {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .show-on-medium {
+    display: block;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: block;
+}
+
+@media screen and (min-width: 641px) {
+  .swiper-button-next {
+    margin-left: 10px;
+  }
+}
