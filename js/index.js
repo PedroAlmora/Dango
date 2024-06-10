@@ -2,9 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navItems = document.querySelectorAll(".nav-item");
   const cartButton = document.getElementById("cart-button");
   const closeCartButton = document.getElementById("close-cart");
-  const cartModal = document.getElementById("cart-modal");
-
-  cartModal.classList.add("hidden");
 
   navItems.forEach((item) => {
     item.addEventListener("click", () => {
