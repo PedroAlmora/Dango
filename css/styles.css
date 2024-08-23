@@ -174,7 +174,7 @@ swiper-slide .text {
 
 
 .image-small {
-  width: 80%; /* Tamaño ajustado para pantallas pequeñas */
+  width: 80%;
   height: auto;
   border: 1px solid #34D399;
   border-radius: 8px;
@@ -223,7 +223,6 @@ swiper-slide .text {
   cursor: pointer;
 }
 
-/* Media query para pantallas grandes */
 @media (min-width: 768px) {
   .content-small {
     display: none;
@@ -249,7 +248,7 @@ swiper-slide .text {
   }
 
   .content-large .flex-shrink-0:first-child {
-    margin-right: 20px; /* Ajusta el espacio entre la foto y el contenido */
+    margin-right: 20px; 
   }
 
   .content-large .text {
@@ -285,7 +284,6 @@ swiper-slide .text {
   margin-bottom: 0.5rem;
 }
 
-/* Estilos específicos para pantallas grandes */
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
@@ -298,7 +296,7 @@ swiper-slide .text {
   }
 
   .card img {
-    width: 100%; /* Hace que las imágenes ocupen el ancho completo de la tarjeta */
-    max-width: none; /* Anula la restricción de tamaño máximo */
+    width: 100%; 
+    max-width: none; 
   }
 }
